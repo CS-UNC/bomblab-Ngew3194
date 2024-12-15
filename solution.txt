@@ -1,1 +1,60 @@
-Remove this line. Enter your phrases line by line here.
+#include <stdio.h>
+#include <string.h>
+
+void phase_1() {
+    char input[20];
+    printf("Phase 1: Enter the defuse string: ");
+    fgets(input, sizeof(input), stdin);
+    
+    if (strcmp(input, "defuse1\n") != 0) {
+        printf("BOOM!!!\n");
+        return;
+    }
+    printf("Phase 1 defused!\n");
+}
+
+void phase_2() {
+    char input[20];
+    printf("Phase 2: Enter the defuse string: ");
+    fgets(input, sizeof(input), stdin);
+    
+    if (strcmp(input, "defuse2\n") != 0) {
+        printf("BOOM!!!\n");
+        return;
+    }
+    printf("Phase 2 defused!\n");
+}
+
+void phase_3() {
+    char input[20];
+    printf("Phase 3: Enter the defuse string: ");
+    fgets(input, sizeof(input), stdin);
+    
+    if (strcmp(input, "defuse3\n") != 0) {
+        printf("BOOM!!!\n");
+        return;
+    }
+    printf("Phase 3 defused!\n");
+}
+
+void phase_4() {
+    char input[20];
+    printf("Phase 4: Enter the defuse string: ");
+    fgets(input, sizeof(input), stdin);
+    
+    if (strcmp(input, "defuse4\n") != 0) {
+        printf("BOOM!!!\n");
+        return;
+    }
+    printf("Phase 4 defused!\n");
+}
+
+int main() {
+    printf("Welcome to the binary bomb defusal!\n");
+    phase_1();
+    phase_2();
+    phase_3();
+    phase_4();
+    printf("All phases defused! You are safe.\n");
+    return 0;
+}
